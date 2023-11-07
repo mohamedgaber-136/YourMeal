@@ -1,0 +1,54 @@
+.LoginForm {
+    width: 40% ! important;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-radius: 10px 0 0px 10px;
+    padding: 5px;
+}
+
+.container {
+    width: auto !important;
+}
+
+.registerImgs {
+    width: 60% ! important;
+    border-radius: 0px 10px 10px 0px;
+
+}
+.inputData{
+    color: white !important;
+}
+.inputData::placeholder{
+    color: grey !important;
+}
+.registerImgs img {
+    object-fit: cover;
+    border-radius: 0px 10px 10px 0px;
+
+}
+
+.registerParen {
+    width: 70%;
+}
+
+.regGrandParent {
+    height: 100vh;
+
+}
+@media(max-width:768px){
+    .registerImgs,.registerImgs img{
+        border-radius: 0 0 10px 10px;
+    }
+    .registerImgs{
+        
+        width: 100% !important;
+    }
+    .LoginForm{
+        width: 100% !important;
+        border-top: 1px solid grey;
+        border-left: 1px solid grey;
+        border-right: 1px solid grey;
+        border-radius: 10px 10px 0px 0px;
+    }
+}

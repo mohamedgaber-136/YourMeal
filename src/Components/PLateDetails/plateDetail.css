@@ -1,0 +1,38 @@
+ .plateParent{
+    height:100vh !important;
+    overflow-x: hidden;
+ }
+
+.PlateDataContent {
+    height: 100%;
+    width: 50%;
+    font-size:1.1vw ;
+}
+.leftSide{
+    width:75% !important;
+    background-size: cover !important;
+}
+
+@media (max-width: 767px) {
+    .plateParent{
+        height: auto !important;
+    }
+    .PlateDataContent {
+        width: 100%;
+        font-size: 3vw;
+    }
+    .leftSide{
+        height: 300px !important;
+        width: 100% !important;
+    }
+}
+
+.content {
+    padding-top: 10px;
+    margin-top: 80px;
+    width: 90%; 
+}
+
+.TitleDetail {
+    color: orange;
+} 

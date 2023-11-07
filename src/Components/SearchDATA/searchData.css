@@ -1,0 +1,31 @@
+.searchParent{
+    height: 100vh;
+    background-image: linear-gradient(to left top, orange, orange 50%, rgb(255, 255, 255) 50%, rgb(255, 255, 255));
+
+}
+.searchChild{
+    padding: 50px 0;
+    overflow-x: scroll;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 1px;
+    height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 20px !important;
+    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #430606 ;
+  }

@@ -1,0 +1,58 @@
+.DatesParent {
+  width: 100%;
+  height: auto;
+}
+
+.times {
+  height: 300px;
+  border: 3px dotted grey;
+  padding: 5px;
+  width: 70% !important;
+}
+
+.lineDashed {
+  width: 80px;
+  border-bottom: 2px dotted grey;
+}
+
+.dayData p {
+  color: white;
+  font-size: 1.5vw;
+  width: 150px;
+  text-align: end;
+}
+
+.datesTiming h2 {
+  color: rgb(255, 255, 255);
+}
+
+.dayData {
+  width: 100%;
+}
+
+p {
+  margin: 0 !important;
+}
+
+.datesImg {
+  background-size: cover;
+  background-position: center;
+}
+
+.datesImg,
+.datesTiming {
+  width: 50%;
+}
+
+@media(max-width:768px) {
+
+  .datesImg,
+  .datesTiming {
+    width: 100%;
+    height: 400px;
+  }
+
+  .dayData p {
+    font-size: 3vw;
+  }
+}

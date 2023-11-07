@@ -1,0 +1,25 @@
+*{
+    transition: 0.5s;
+}
+.NavBtnsParent{
+    border:1px solid grey;
+    border-radius: 30px;
+}
+.shadowBtn{
+    box-shadow: 0 0 15px 5px lightgray;
+    border-radius: 100px !important;
+    background-color: orange  !important  ;
+}
+.radius{
+    border-radius: 100px !important;
+}
+text {
+    fill: #825517;
+    font-size: 54px;
+  }
+  .CardsContainer{
+    width: 90%;
+     }
+     .hiddenUnderline{
+        text-decoration:none !important;
+     }
