@@ -78,10 +78,7 @@ header {
   height: 500px;
 }
 
-.container:active {
-  width: 180px;
-  height: 245px;
-}
+
 
 #card {
   position: absolute;

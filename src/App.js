@@ -5,12 +5,14 @@ import { Suspense, lazy } from "react";
 import loader from "./animation_lnyjf4r3_small.gif";
 import { Provider } from "react-redux";
 import store from "./Redux/Store";
+
 async function delayForDemo(promise) {
   await new Promise((resolve) => {
     setTimeout(resolve, 2000);
   });
   return promise;
 }
+
 let HomeLazy = lazy(() => delayForDemo(import("./Components/Home/Home")));
 let LoginLazy = lazy(() =>
   delayForDemo(import("./Components/LoginForm/LoginForm"))
@@ -37,6 +39,11 @@ let routers = createBrowserRouter([
     element: <Layout />,
     children: [
       {
+        path: "/",
+        element: <HomeLazy />, // Home component will render on the root path "/"
+      },
+
+      {
         path: "/searchData",
         element: <SearchDataLazy />,
       },
@@ -49,26 +56,21 @@ let routers = createBrowserRouter([
         element: <LoginLazy />,
       },
       {
+        path: "/PlateDetails",
+        element: <PlateDetailsLazy />,
+      },
+      {
         path: "*",
         element: <NotFoundLazy />,
       },
       {
-        path: "/",
-        element: <HomeLazy />,
-        children: [
-          {
-            path: `/category/:categName`,
-            element: <DataCompLazy />,
-          },
-        ],
-      },
-      {
-        path: "/PlateDetails",
-        element: <PlateDetailsLazy />,
+        path: "/category/:categName",
+        element: <DataCompLazy />,
       },
     ],
   },
 ]);
+
 function App() {
   return (
     <Suspense
@@ -81,11 +83,11 @@ function App() {
         </div>
       }
     >
-        <ResStoreProvide>
-      <Provider store={store}>
+      <ResStoreProvide>
+        <Provider store={store}>
           <RouterProvider router={routers} />
-      </Provider>
-        </ResStoreProvide>
+        </Provider>
+      </ResStoreProvide>
     </Suspense>
   );
 }

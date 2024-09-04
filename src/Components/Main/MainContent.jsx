@@ -5,10 +5,9 @@ import DataComp from "../DataComp/DataComp";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./main.css";
 const MainContent = () => {
-  let paths = useLocation().pathname;
   let navigation = useNavigate();
   let [activekeys, setActive] = useState("0");
-  const handleSelect = (eventKey) => setActive(eventKey);
+  const handleSelect = (eventKey) => setActive(eventKey)
   const { categNames, setCateg, singleCateg } = useContext(ResStore);
   const activeCondition = (ind) => {
     if (activekeys == ++ind) {
@@ -63,6 +62,7 @@ const MainContent = () => {
           </Nav.Item>
           {categNames.map((element, ind) => (
             <Nav.Item key={ind}>
+
               <Nav.Link
                 onClick={() => found(element)}
                 className={activeCondition(ind)}

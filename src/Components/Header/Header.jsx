@@ -37,7 +37,7 @@ export const Header = () => {
       </div>
       <div className="headerRightSide d-flex justify-content-center align-items-center">
         <div className="imgContainer ">
-          <div className="container noselect">
+          <div className="container ">
             <div className="canvas">
               <div className="tracker tr-1"></div>
               <div className="tracker tr-2"></div>
